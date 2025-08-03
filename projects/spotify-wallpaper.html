@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>README Viewer</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #1e1e1e;
+      color: #f0f0f0;
+      font-family: sans-serif;
+    }
+    #content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">Loading README...</div>
+
+  <!-- Load the Marked.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const url = 'https://raw.githubusercontent.com/hudulovhamzat0/spotify-wallpaper/main/README.MD';
+
+
+    fetch(url)
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById('content').innerHTML = marked.parse(markdown);
+      });
+  </script>
+</body>
+</html>
