@@ -1,542 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Personal Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169007209-3');
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamzat Hudulov | Full-Stack Developer & Pentester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            left: -8px;
+            top: 0;
+            background-color: #3b82f6;
+        }
+    </style>
 </head>
-
-<body>
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
-
-    <div class="container">
-
-      <h1><a href="index.html">Hamzat Hudulov</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://drive.google.com/file/d/1HXEV_jpubiB4n1bvBNUwfrElWs-3KX8H/view?usp=drive_link" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="social-links">
-          <a href="https://www.github.com/hudulovhamzat0" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:hudulov@yahoo.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-          <a href="https://www.instagram.com/hudulovhamzat" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://open.spotify.com/user/31jlfwluh5qpsm7uq4xpjdso2t4q?si=43dc1ba0cd404d1e" target="_blank" class="spotify"><i class="bx bxl-spotify"></i></a>
-
-
-
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.OWHqt6GY5jrr7ETvJr8ZXwHaHa%3Fpid%3DApi&f=1&ipt=aaf578ff6ac44fcfad99c5128fb881bd41c041ad8f0674bfb36d46b193043368&ipo=images" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Focused developer with a keen interest in software development, artificial intelligence and malware analysis.I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 8 August 2008</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +994 50 686 55 30</li>
-              </ul>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-blue-600">Hamzat Hudulov</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                    <a href="https://drive.google.com/file/d/1HXEV_jpubiB4n1bvBNUwfrElWs-3KX8H/view?usp=drive_link" 
+                       class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Resume</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Azerbaijan/Baku</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> hudulov@yahoo.com</li>
-              </ul>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
+                <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Skills</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="https://drive.google.com/file/d/1HXEV_jpubiB4n1bvBNUwfrElWs-3KX8H/view?usp=drive_link" 
+                   class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-center">Resume</a>
             </div>
-          </div>
         </div>
-      </div>
+    </nav>
 
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-global-line" style="color: #5578ff;"></i>
-            <h3>Web Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-robot-line" style="color: #e80368;"></i>
-            <h3>Automation</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-search-eye-line" style="color: #1c7d32;"></i>
-            <h3>Building Scrapers</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-brush-line" style="color: #28a745;"></i>
-            <h3>Graphic Design</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-shield-keyhole-line" style="color: #f1081f;"></i>
-            <h3>Fix security vulnerabilities</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-function-line" style="color: #47aeff;"></i>
-            <h3>Algorithms</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="bx bx-image" style="color: #ffc107;"></i>
-            <h3>Image and Video Processing</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row d-flex justify-content-between">
-        <div class="col-md-6 icon-box" style="float:left; width:48%;">
-          <img src="" class="img-fluid" alt="">
-          <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>I will start university this year</em></p>
-          <h5 style="text-align:left;padding: 0px 10px;">September 2025</h5>
-          <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-          <ul style="text-align:left;color:#fff;">
-            <li>Cyber Security</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div class="col-md-6 icon-box" style="float:left; width:48%;">
-          <img src="" class="img-fluid" alt="">
-          <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Free Code Camp</em></p>
-          <h5 style="text-align:left;padding: 0px 10px;">June 2025 - August 2025</h5>
-          <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-          <ul style="text-align:left;color:#fff;">
-            <li>Front-End Libraries</li>
-            <li>Responsive Web Design</li>
-            <li>JavaScript Algorithms and Data Structures</li>
-            <li>Scientific Computing with Python</li>
-          </ul>
-        </div>
-      </div>
-
-
-    <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/js-data.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>JavaScript Algorithms and Data Structures</h4>
-              <div class="portfolio-links">
-              </div>
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-300">Hamzat Hudulov</span></h1>
+                    <h2 class="text-2xl md:text-3xl mb-6">Full-Stack Developer & Pentester</h2>
+                    <p class="text-lg mb-8 text-gray-200">Focused developer with a keen interest in software development, artificial intelligence and malware analysis.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">Contact Me</a>
+                        <a href="#projects" class="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-600 transition">View Projects</a>
+                    </div>
+                </div>
             </div>
-           </div>
-          </div>
+        </div>
+    </section>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/fronted-lib.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Front-End Development Libraries</h4>
-              <div class="portfolio-links">
-              </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">About <span class="text-blue-600">Me</span></h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.OWHqt6GY5jrr7ETvJr8ZXwHaHa%3Fpid%3DApi&f=1&ipt=aaf578ff6ac44fcfad99c5128fb881bd41c041ad8f0674bfb36d46b193043368&ipo=images" 
+                         alt="Hamzat Hudulov" class="rounded-lg shadow-xl w-64 h-64 object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Passionate Python Developer</h3>
+                    <p class="text-gray-600 mb-6">I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems. Focused developer with a keen interest in software development, artificial intelligence and malware analysis.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-birthday-cake text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Birthday:</h4>
+                                <p class="text-gray-600">8 August 2008</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone:</h4>
+                                <p class="text-gray-600">+994 50 686 55 30</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">City:</h4>
+                                <p class="text-gray-600">Azerbaijan/Baku</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Email:</h4>
+                                <p class="text-gray-600">hudulov@yahoo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="https://www.github.com/hudulovhamzat0" class="text-gray-700 hover:text-blue-600 text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:hudulov@yahoo.com" class="text-gray-700 hover:text-blue-600 text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hudulovhamzat" class="text-gray-700 hover:text-blue-600 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://open.spotify.com/user/31jlfwluh5qpsm7uq4xpjdso2t4q?si=43dc1ba0cd404d1e" class="text-gray-700 hover:text-blue-600 text-2xl">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/responsivewebdesign.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Responsive Web Design</h4>
-              <div class="portfolio-links">
-              </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">My <span class="text-blue-600">Skills</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+                    <p class="text-gray-600">Building robust and scalable software solutions using modern technologies.</p>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-600">Creating responsive and interactive web applications with modern frameworks.</p>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Automation</h3>
+                    <p class="text-gray-600">Developing scripts to automate repetitive tasks and improve efficiency.</p>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Penetration Testing</h3>
+                    <p class="text-gray-600">Conducting security assessments and ethical hacking to identify vulnerabilities.</p>
+                </div>
             </div>
-          </div>
-        </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/python.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Responsive Web Design</h4>
-              <div class="portfolio-links">
-              </div>
+            
+            <h3 class="text-2xl font-semibold mb-8 text-center">Technologies I Work With</h3>
+            
+            <div class="mb-12">
+                <h4 class="text-xl font-medium mb-4 text-gray-700">Languages and Databases</h4>
+                <div class="flex flex-wrap gap-4">
+                    <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" class="h-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB" class="h-12">
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </section>
-  <!-- End Education Section -->
-
-
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="" style="color:#12d640">Self study and Freelancing</a><br> </h4>
-                <h5 style="text-align:left;">January 2022 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Web and Python developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Created full functional web applications using Flask framework</li>
-                  <li>Pentested web applications to identify vulnerabilities and reported findings to the development team.</li>
-                   <li>Developed and maintained Python scripts for data scraping, automation, and data analysis tasks.</li>
-                </ul>
-              </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-
-
-  <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web</li>
-            <li data-filter=".filter-project">Python</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-project">
-          <center><h4>Yone</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/yone/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/yone.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+            
+            <div class="mb-12">
+                <h4 class="text-xl font-medium mb-4 text-gray-700">Frameworks</h4>
+                <div class="flex flex-wrap gap-4">
+                    <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" class="h-12">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fflask-logo-png-transparent.png&f=1&nofb=1&ipt=785f70448a02be49951820550b2f821d00fa0e6282e680f9f0be1764a0138e29" alt="Flask" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV" class="h-12">
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>VGC Guardian</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/vgc-guardian/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/vgc-guardian.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+            
+            <div>
+                <h4 class="text-xl font-medium mb-4 text-gray-700">Tools</h4>
+                <div class="flex flex-wrap gap-4">
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" class="h-12">
+                    <img src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg" alt="Linux" class="h-12">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fatomrace.com%2Fblog%2Fwp-content%2Fuploads%2F2017%2F10%2Fmetasploit-logo-705x705.png&f=1&nofb=1&ipt=136f09814ed3c10ea7f97dec4777a7c3debe694d8672596ea28b15237c5bdccd" alt="Metasploit Framework" class="h-12">
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Movie API</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/movie-api/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/movie-api.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">My <span class="text-blue-600">Education</span></h2>
+            
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Timeline line -->
+                <div class="absolute left-4 md:left-1/2 h-full w-0.5 bg-blue-200 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline item 1 -->
+                <div class="relative mb-12 pl-12 md:pl-0 md:flex justify-between items-center">
+                    <div class="md:w-5/12 md:pr-8 md:text-right">
+                        <h4 class="text-xl font-semibold mb-2">University</h4>
+                        <p class="text-gray-600 mb-2">I will start university this year</p>
+                        <span class="text-sm text-blue-600">September 2025</span>
+                    </div>
+                    <div class="hidden md:block w-2/12 flex justify-center">
+                        <div class="w-4 h-4 rounded-full bg-blue-600"></div>
+                    </div>
+                    <div class="md:w-5/12 mt-4 md:mt-0 bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h5 class="font-medium mb-2">Relevant Coursework:</h5>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Cyber Security</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Timeline item 2 -->
+                <div class="relative mb-12 pl-12 md:pl-0 md:flex justify-between items-center">
+                    <div class="md:w-5/12 md:order-3">
+                        <h4 class="text-xl font-semibold mb-2">Free Code Camp</h4>
+                        <p class="text-gray-600 mb-2">Online Coding Bootcamp</p>
+                        <span class="text-sm text-blue-600">June 2025 - August 2025</span>
+                    </div>
+                    <div class="hidden md:block w-2/12 flex justify-center md:order-2">
+                        <div class="w-4 h-4 rounded-full bg-blue-600"></div>
+                    </div>
+                    <div class="md:w-5/12 md:order-1 md:pr-8 md:text-right mt-4 md:mt-0 bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h5 class="font-medium mb-2">Relevant Coursework:</h5>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Front-End Libraries</li>
+                            <li>Responsive Web Design</li>
+                            <li>JavaScript Algorithms and Data Structures</li>
+                            <li>Scientific Computing with Python</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Spotify Wallpaper</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/spotify-wallpaper/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/spotify-wallpaper.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+            
+            <h3 class="text-2xl font-semibold text-center mb-8 mt-16">Certifications</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://hudulovhamzat0.github.io/portfolio/assets/img/certification/js-data.jpeg" 
+                         alt="JavaScript Algorithms and Data Structures" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">JavaScript Algorithms and Data Structures</h4>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://hudulovhamzat0.github.io/portfolio/assets/img/certification/fronted-lib.png" 
+                         alt="Front-End Development Libraries" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">Front-End Development Libraries</h4>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://hudulovhamzat0.github.io/portfolio/assets/img/certification/responsivewebdesign.png" 
+                         alt="Responsive Web Design" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">Responsive Web Design</h4>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://hudulovhamzat0.github.io/portfolio/assets/img/certification/python.png" 
+                         alt="Python Certification" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">Python Certification</h4>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Portfolio</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/portfolio/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/portfolio.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">My <span class="text-blue-600">Experience</span></h2>
+            
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-start mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-laptop-code text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Self study and Freelancing</h3>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/" class="text-blue-600 hover:underline">Portfolio Link</a>
+                        <p class="text-gray-600 mb-2">January 2022 - Present</p>
+                        <p class="font-medium mb-2">Web and Python developer</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Created full functional web applications using Flask framework</li>
+                            <li>Pentested web applications to identify vulnerabilities and reported findings to the development team.</li>
+                            <li>Developed and maintained Python scripts for data scraping, automation, and data analysis tasks.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Qr code generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="https://github.com/hudulovhamzat0/qr/raw/main/ss.gif" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/qr.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">My <span class="text-blue-600">Projects</span></h2>
+            
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button type="button" class="project-filter px-4 py-2 text-sm font-medium rounded-l-lg border border-gray-200 bg-blue-600 text-white" data-filter="all">
+                        All
+                    </button>
+                    <button type="button" class="project-filter px-4 py-2 text-sm font-medium border-t border-b border-gray-200 bg-white text-gray-700 hover:bg-gray-50" data-filter="web">
+                        Web
+                    </button>
+                    <button type="button" class="project-filter px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-200 bg-white text-gray-700 hover:bg-gray-50" data-filter="python">
+                        Python
+                    </button>
+                </div>
             </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- End Project Section -->
-
-
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                 <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone" height="70" width="130">
-                 <img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" alt="vectorlogo.zone" height="70" width="130">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/yone/raw/main/ss.gif" 
+                             alt="Yone Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Yone</h3>
+                        <p class="text-gray-600 mb-4">A web application project showcasing modern design and functionality.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/yone.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="python">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/vgc-guardian/raw/main/ss.gif" 
+                             alt="VGC Guardian" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">VGC Guardian</h3>
+                        <p class="text-gray-600 mb-4">A Python-based security application for monitoring and protection.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/vgc-guardian.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/movie-api/raw/main/ss.gif" 
+                             alt="Movie API" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Movie API</h3>
+                        <p class="text-gray-600 mb-4">A web application for browsing movies with API integration.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/movie-api.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="python">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/spotify-wallpaper/raw/main/ss.gif" 
+                             alt="Spotify Wallpaper" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Spotify Wallpaper</h3>
+                        <p class="text-gray-600 mb-4">A Python application that generates wallpapers based on Spotify data.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/spotify-wallpaper.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/portfolio/raw/main/ss.gif" 
+                             alt="Portfolio" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfolio</h3>
+                        <p class="text-gray-600 mb-4">A personal portfolio website showcasing projects and skills.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/portfolio.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/hudulovhamzat0/qr/raw/main/ss.gif" 
+                             alt="QR Code Generator" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">QR code generator</h3>
+                        <p class="text-gray-600 mb-4">A web application for generating custom QR codes.</p>
+                        <a href="https://hudulovhamzat0.github.io/portfolio/projects/qr.html" 
+                           class="text-blue-600 hover:underline flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Frameworks</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- End Skills Section -->
-
-
-
-
-
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Azerbaijan</p>
-            <p>Baku</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.github.com/hudulovhamzat0" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:hudulov@yahoo.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-              <a href="https://www.instagram.com/hudulovhamzat" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://open.spotify.com/user/31jlfwluh5qpsm7uq4xpjdso2t4q?si=43dc1ba0cd404d1e" target="_blank" class="spotify"><i class="bx bxl-spotify"></i></a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Get In <span class="text-blue-300">Touch</span></h2>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:px-8 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    
+                    <div class="flex flex-wrap justify-center gap-6 mb-8">
+                        <div class="flex items-center bg-blue-500/20 px-4 py-3 rounded-lg">
+                            <div class="bg-blue-500 p-2 rounded-full mr-3">
+                                <i class="fas fa-map-marker-alt text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Azerbaijan, Baku</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center bg-blue-500/20 px-4 py-3 rounded-lg">
+                            <div class="bg-blue-500 p-2 rounded-full mr-3">
+                                <i class="fas fa-envelope text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">hudulov@yahoo.com</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center bg-blue-500/20 px-4 py-3 rounded-lg">
+                            <div class="bg-blue-500 p-2 rounded-full mr-3">
+                                <i class="fas fa-phone text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">+994 50 686 55 30</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold mt-10 mb-6 text-center md:text-left">Contact Me</h3>
+                    <div class="grid grid-cols-1 gap-6 mx-auto">
+                        <a href="https://api.whatsapp.com/send?phone=994506865530&text=Hello%20i%20am%20interested%20for%20work%20with%20you" 
+                           class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg flex items-center justify-center transition transform hover:scale-105">
+                            <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                            <span class="text-lg font-medium">Message on WhatsApp</span>
+                        </a>
+                        
+                        <div class="grid grid-cols-4 gap-4">
+                            <a href="https://www.github.com/hudulovhamzat0" class="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition transform hover:scale-110">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="mailto:hudulov@yahoo.com" class="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition transform hover:scale-110">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hudulovhamzat" class="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition transform hover:scale-110">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://open.spotify.com/user/31jlfwluh5qpsm7uq4xpjdso2t4q?si=43dc1ba0cd404d1e" class="bg-white text-gray-800 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition transform hover:scale-110">
+                                <i class="fab fa-spotify text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>hudulov@yahoo.com</p>
-          </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">Hamzat Hudulov</h3>
+                    <p class="text-gray-400">Python Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white">About</a>
+                    <a href="#education" class="text-gray-400 hover:text-white">Education</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white">Experience</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white">Projects</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white">Skills</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Hamzat Hudulov. All rights reserved.</p>
+            </div>
         </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+994 50 686 55 30</p>
-          </div>
-        </div>
-      </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
-    </div>
-  </section>
+    </footer>
 
-  <!-- End Contact Section -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Python Developer", "Web Developer", "Pentester", "Open Source Contributor"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        // Project filtering
+        const filterButtons = document.querySelectorAll('.project-filter');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700');
+                });
+                this.classList.add('bg-blue-600', 'text-white');
+                this.classList.remove('bg-white', 'text-gray-700');
+                
+                // Filter projects
+                const filter = this.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
 
-  <style>
-    .portfolio-wrap img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-  </style>
+        // Add scroll animation
+        const observerOptions = {
+            threshold: 0.1
+        };
 
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
-
 </html>
