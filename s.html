@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binyam Seyoum - DevOps & MLOps Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .card-glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skill-pill {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .terminal-line {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .terminal-line::before {
+            content: "$";
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+        }
+        
+        .terminal-output {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .terminal-output::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
+                    <span class="text-white font-bold">B</span>
+                </div>
+                <span class="code-font text-xl font-semibold">binyam@devops:~</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-300 hover:text-white transition">About</a>
+                <a href="#skills" class="text-slate-300 hover:text-white transition">Skills</a>
+                <a href="#impact" class="text-slate-300 hover:text-white transition">Impact</a>
+                <a href="#projects" class="text-slate-300 hover:text-white transition">Projects</a>
+                <a href="#contact" class="text-slate-300 hover:text-white transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-slate-300">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-32">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(56,189,248,0.1)_0,_rgba(56,189,248,0)_70%)]"></div>
+            <div class="absolute top-0 left-0 w-full h-full opacity-30">
+                <div class="absolute top-0 left-0 w-64 h-64 rounded-full bg-blue-500 blur-3xl opacity-20"></div>
+                <div class="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-indigo-500 blur-3xl opacity-20"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        <span class="gradient-text">Binyam Seyoum</span>
+                    </h1>
+                    <div class="terminal-line code-font text-xl md:text-2xl mb-6">
+                        $ engineering-scalable-platforms --mode=production
+                    </div>
+                    <div class="terminal-line code-font text-xl md:text-2xl mb-8">
+                        $ whoami
+                    </div>
+                    
+                    <div class="terminal-output text-xl mb-8">
+                        DevOps & Site Reliability Engineer
+                    </div>
+                    
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                        Architecting cloud-native infrastructure, automating deployment pipelines, and building reliable platforms that scale from zero to millions of users.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg font-medium hover:opacity-90 transition">
+                            Get in Touch
+                        </a>
+                        <a href="#" class="px-6 py-3 border border-slate-600 rounded-lg font-medium hover:bg-slate-800 transition">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-10 -left-10 w-64 h-64 rounded-full bg-blue-500 blur-2xl opacity-10 animate-float"></div>
+                        <div class="absolute -bottom-10 -right-10 w-64 h-64 rounded-full bg-indigo-500 blur-2xl opacity-10 animate-float" style="animation-delay: 2s;"></div>
+                        
+                        <div class="card-glass rounded-2xl p-8 backdrop-blur-sm">
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-slate-800/50 rounded-xl p-4 text-center">
+                                    <div class="text-3xl font-bold gradient-text">10+</div>
+                                    <div class="text-sm text-slate-400">Years Experience</div>
+                                </div>
+                                <div class="bg-slate-800/50 rounded-xl p-4 text-center">
+                                    <div class="text-3xl font-bold gradient-text">50+</div>
+                                    <div class="text-sm text-slate-400">Projects Delivered</div>
+                                </div>
+                                <div class="bg-slate-800/50 rounded-xl p-4 text-center">
+                                    <div class="text-3xl font-bold gradient-text">99.9%</div>
+                                    <div class="text-sm text-slate-400">Uptime Achieved</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h3 class="text-xl font-semibold mb-4">Expertise Highlights</h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-blue-400"></div>
+                                        <span>Multi-Cloud Architecture</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+                                        <span>CI/CD Automation</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-purple-400"></div>
+                                        <span>Security & Compliance</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-pink-400"></div>
+                                        <span>Monitoring & Alerts</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+                                        <span>Infrastructure as Code</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                                        <span>Performance Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">DevOps Engineer & Platform Architect</h2>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+                    I build scalable cloud infrastructure and automate deployment pipelines that power innovation at scale.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">75%</div>
+                    <h3 class="text-xl font-semibold mb-2">Faster Deployments</h3>
+                    <p class="text-slate-400">Streamlined CI/CD pipelines reduce deployment times</p>
+                </div>
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">40%</div>
+                    <h3 class="text-xl font-semibold mb-2">Cost Reduction</h3>
+                    <p class="text-slate-400">Optimized cloud resources lower operational costs</p>
+                </div>
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">95%</div>
+                    <h3 class="text-xl font-semibold mb-2">Fewer Incidents</h3>
+                    <p class="text-slate-400">Proactive monitoring prevents production issues</p>
+                </div>
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">2x</div>
+                    <h3 class="text-xl font-semibold mb-2">Team Productivity</h3>
+                    <p class="text-slate-400">Developer self-service tools accelerate delivery</p>
+                </div>
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">99.9%</div>
+                    <h3 class="text-xl font-semibold mb-2">Uptime</h3>
+                    <p class="text-slate-400">Highly available systems with redundancy</p>
+                </div>
+                <div class="card-glass rounded-xl p-6">
+                    <div class="text-5xl font-bold gradient-text mb-4">100%</div>
+                    <h3 class="text-xl font-semibold mb-2">Compliance</h3>
+                    <p class="text-slate-400">Security and regulatory standards met</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Impact by the Numbers</h2>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+                    Real metrics from infrastructure transformations and platform engineering projects
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">50+</div>
+                    <h3 class="text-xl font-semibold mb-2">Infrastructure Projects</h3>
+                    <p class="text-slate-400">Cloud migrations and platform builds</p>
+                </div>
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">100%</div>
+                    <h3 class="text-xl font-semibold mb-2">Deployment Success</h3>
+                    <p class="text-slate-400">Zero-downtime deployments achieved</p>
+                </div>
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">75%</div>
+                    <h3 class="text-xl font-semibold mb-2">Time Reduction</h3>
+                    <p class="text-slate-400">In deployment and recovery times</p>
+                </div>
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">30+</div>
+                    <h3 class="text-xl font-semibold mb-2">Teams Empowered</h3>
+                    <p class="text-slate-400">With DevOps best practices</p>
+                </div>
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">2x</div>
+                    <h3 class="text-xl font-semibold mb-2">Performance Boost</h3>
+                    <p class="text-slate-400">Average system performance improvement</p>
+                </div>
+                <div class="card-glass rounded-xl p-8 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-4">100%</div>
+                    <h3 class="text-xl font-semibold mb-2">Security Compliant</h3>
+                    <p class="text-slate-400">SOC 2 and industry standards met</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="terminal-line code-font text-xl md:text-2xl mb-4 inline-block">
+                    $ grep -r "expertise" /var/log/career.log
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical Expertise</h2>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+                    A comprehensive arsenal of modern DevOps, SRE, and AI/ML infrastructure tools
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Skill Card 1 -->
+                <div class="card-glass rounded-xl p-6 hover:border-blue-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-900/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Site Reliability Engineering</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        Building resilient systems with 99.9% uptime, chaos engineering, and automated incident response
+                    </p>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="card-glass rounded-xl p-6 hover:border-indigo-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-900/30 flex items-center justify-center mr-4">
+                            <i class="fab fa-docker text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Kubernetes & Orchestration</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        K8s cluster management, service mesh, auto-scaling, and cloud-native application deployment
+                    </p>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="card-glass rounded-xl p-6 hover:border-purple-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-900/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-code-branch text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">GitOps & CI/CD</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        ArgoCD, Flux, Tekton pipelines with automated testing, security scanning, and progressive deployments
+                    </p>
+                </div>
+                
+                <!-- Skill Card 4 -->
+                <div class="card-glass rounded-xl p-6 hover:border-pink-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-pink-900/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-cloud text-pink-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Multi-Cloud Architecture</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        AWS, GCP, Azure expertise with hybrid cloud strategies and cloud-agnostic solutions
+                    </p>
+                </div>
+                
+                <!-- Skill Card 5 -->
+                <div class="card-glass rounded-xl p-6 hover:border-green-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-green-900/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-green-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Infrastructure as Code</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        Terraform, Crossplane, Pulumi for immutable infrastructure and automated provisioning
+                    </p>
+                </div>
+                
+                <!-- Skill Card 6 -->
+                <div class="card-glass rounded-xl p-6 hover:border-yellow-400/30 transition border border-slate-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-yellow-900/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-lock text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Security & Compliance</h3>
+                    </div>
+                    <p class="text-slate-400 mb-4">
+                        Zero-trust architecture, policy-as-code, vulnerability scanning with Falco, Trivy, and OPA
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Tech Ecosystem -->
+            <div class="mt-20">
+                <div class="terminal-line code-font text-xl md:text-2xl mb-6 inline-block">
+                    $ cat /etc/tech-ecosystem.conf
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Production-ready Tools</h2>
+                
+                <div class="card-glass rounded-xl p-6">
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Kubernetes</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Docker</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Terraform</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Ansible</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Helm</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Istio</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">ArgoCD</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">GitHub Actions</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Jenkins</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Tekton</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Flux</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Spinnaker</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Prometheus</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Grafana</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Jaeger</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">ELK</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Datadog</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">OpenTelemetry</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">AWS</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">GCP</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Azure</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Cloudflare</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">DigitalOcean</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Linode</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Vault</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Falco</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Trivy</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">OPA</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Snyk</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">CertManager</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Kubeflow</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">MLflow</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Ray</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">BentoML</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">Airflow</div>
+                        <div class="skill-pill px-4 py-2 bg-slate-800 rounded-full text-sm font-medium">LangChain</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Industries -->
+            <div class="mt-20">
+                <div class="terminal-line code-font text-xl md:text-2xl mb-6 inline-block">
+                    $ find /industries -type f -name "*.experience" | head -12
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Industry Experience</h2>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-blue-900/30 flex items-center justify-center">
+                            <i class="fas fa-cloud text-blue-400"></i>
+                        </div>
+                        <div>Cloud & SaaS</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-green-900/30 flex items-center justify-center">
+                            <i class="fas fa-coins text-green-400"></i>
+                        </div>
+                        <div>FinTech & Banking</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-red-900/30 flex items-center justify-center">
+                            <i class="fas fa-heartbeat text-red-400"></i>
+                        </div>
+                        <div>Healthcare & Biotech</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-yellow-900/30 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-yellow-400"></i>
+                        </div>
+                        <div>E-commerce & Retail</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-purple-900/30 flex items-center justify-center">
+                            <i class="fas fa-brain text-purple-400"></i>
+                        </div>
+                        <div>AI & Machine Learning</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-indigo-900/30 flex items-center justify-center">
+                            <i class="fas fa-industry text-indigo-400"></i>
+                        </div>
+                        <div>Manufacturing & IoT</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-pink-900/30 flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-pink-400"></i>
+                        </div>
+                        <div>EdTech & Learning</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-orange-900/30 flex items-center justify-center">
+                            <i class="fas fa-gamepad text-orange-400"></i>
+                        </div>
+                        <div>Gaming & Entertainment</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-teal-900/30 flex items-center justify-center">
+                            <i class="fab fa-ethereum text-teal-400"></i>
+                        </div>
+                        <div>Blockchain & Web3</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-gray-900/30 flex items-center justify-center">
+                            <i class="fas fa-landmark text-gray-400"></i>
+                        </div>
+                        <div>Government & Public</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-blue-900/30 flex items-center justify-center">
+                            <i class="fas fa-phone-alt text-blue-400"></i>
+                        </div>
+                        <div>Telecommunications</div>
+                    </div>
+                    <div class="card-glass rounded-lg p-4 text-center hover:bg-slate-800/50 transition">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-green-900/30 flex items-center justify-center">
+                            <i class="fas fa-bolt text-green-400"></i>
+                        </div>
+                        <div>Energy & Utilities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="terminal-line code-font text-xl md:text-2xl mb-4 inline-block">
+                    $ git clone && explore
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Open Source Projects</h2>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+                    Discover my latest projects and contributions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project 1 -->
+                <div class="card-glass rounded-xl overflow-hidden hover:border-blue-400/30 transition border border-slate-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">PhoenixAlerts</h3>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-xs code-font">JavaScript</span>
+                        </div>
+                        <p class="text-slate-400 mb-4">No description available</p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 code-font text-sm">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="card-glass rounded-xl overflow-hidden hover:border-indigo-400/30 transition border border-slate-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">devto-insight</h3>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-xs code-font">Python</span>
+                        </div>
+                        <p class="text-slate-400 mb-4">
+                            Devto-insight is an open-source analytics platform that helps developers understand which of their Dev.to blog posts perform best and provides AI-generated recommendations for future content.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 code-font text-sm">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="card-glass rounded-xl overflow-hidden hover:border-purple-400/30 transition border border-slate-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">ai-telegram-calendar</h3>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-xs code-font">Python</span>
+                        </div>
+                        <p class="text-slate-400 mb-4">No description available</p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 code-font text-sm">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/binyamse" class="inline-flex items-center px-6 py-3 border border-slate-600 rounded-lg font-medium hover:bg-slate-800 transition">
+                    <i class="fab fa-github mr-2"></i> View All Repositories on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 to-blue-900/20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto">
+                    Ready to discuss platform engineering solutions? I'd love to hear about your infrastructure challenges and explore how we can build something scalable together.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card-glass rounded-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Contact Info -->
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-blue-900/30 flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope text-blue-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <a href="mailto:contact@binyam.io" class="text-blue-400 hover:text-blue-300">contact@binyam.io</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-green-900/30 flex items-center justify-center flex-shrink-0">
+                                        <i class="fab fa-whatsapp text-green-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">WhatsApp</h4>
+                                        <a href="https://wa.me/251911720877" class="text-blue-400 hover:text-blue-300">+251 911 720 877</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-blue-600/30 flex items-center justify-center flex-shrink-0">
+                                        <i class="fab fa-linkedin-in text-blue-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">LinkedIn</h4>
+                                        <a href="#" class="text-blue-400 hover:text-blue-300">Connect with me</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-slate-700/30 flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-file-alt text-slate-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Resume</h4>
+                                        <a href="#" class="text-blue-400 hover:text-blue-300">Download my resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Form -->
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Ready to Start Your Project?</h3>
+                            <p class="text-slate-400 mb-6">Let's discuss your vision and create something extraordinary</p>
+                            
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your name">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg font-medium hover:opacity-90 transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
+                        <span class="text-white font-bold">B</span>
+                    </div>
+                    <span class="code-font text-lg font-semibold">binyam@devops:~</span>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition">
+                        <i class="fab fa-dev text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-sm text-slate-500">
+                &copy; 2025 Binyam Seyoum. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle would go here
+        // const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        // const mobileMenu = document.querySelector('.mobile-menu');
+        // mobileMenuButton.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        // });
+    </script>
+</body>
+</html>
