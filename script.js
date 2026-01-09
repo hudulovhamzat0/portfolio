@@ -116,7 +116,7 @@ This incident will be reported.`;
     'clear': () => {
         terminalContent.innerHTML = `
             <div class="line">
-                <span class="prompt">guest@hudulOS:~%></span>
+                <span class="prompt">hudul@guest:~%></span>
                 <span class="command" id="current-line" contenteditable="true"></span>
             </div>
         `;
@@ -257,3 +257,4 @@ Discord   → discord.com/users/YOUR_DISCORD_ID`;
         updateCurrentLine();
     }
 });
+
